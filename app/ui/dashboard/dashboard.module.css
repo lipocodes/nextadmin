@@ -13,3 +13,26 @@
  flex:4;
  padding: 20px;
 }
+
+.cards{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap:10px;
+}
+
+.wrapper{
+ display:flex;
+ gap:20px;
+}
+
+.main{
+ flex:3;
+ display:flex;
+ flex-direction: column;
+ gap:20px;
+}
+
+.side{
+  flex:1;
+}
