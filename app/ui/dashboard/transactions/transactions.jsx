@@ -18,8 +18,10 @@ function Transactions() {
         <tbody>
           <tr>
             <td>
-              <Image src='/noavatar.png'  alt='' width={40} height={40} className={styles.userImage}/>
-              John Doe
+              <div className={styles.user}>
+                <Image src='/noavatar.png'  alt='' width={40} height={40} className={styles.userImage}/>
+                John Doe
+              </div>
             </td>
             <td>
               <span className={`${styles.status} ${styles.pending}`}>Pending</span>
@@ -29,8 +31,10 @@ function Transactions() {
           </tr>
           <tr>
             <td>
-              <Image src='/noavatar.png'  alt='' width={40} height={40} className={styles.userImage}/>
-              Jane Doe
+              <div className={styles.user}>
+                <Image src='/noavatar.png'  alt='' width={40} height={40} className={styles.userImage}/>
+                Jane Doe
+              </div>  
             </td>
             <td>
               <span className={`${styles.status} ${styles.done}`}>Done</span>
@@ -40,8 +44,10 @@ function Transactions() {
           </tr>
           <tr>
             <td>
-              <Image src='/noavatar.png'  alt='' width={40} height={40} className={styles.userImage}/>
-              Donna Martin
+              <div className={styles.user}>
+                <Image src='/noavatar.png'  alt='' width={40} height={40} className={styles.userImage}/>
+                Donna Martin
+              </div>
             </td>
             <td>
               <span className={`${styles.status} ${styles.canceled}`}>Canceled</span>

@@ -5,29 +5,45 @@
 }
 
 .table{
+  width:100%;
+}
 
+.table td{
+   padding:10px; 
 }
 
 .title{
-
+ margin-bottom: 20px;
+ font-weight: 200;
+ color: var(--softText)
 }
 
 .userImage{
-    border-radius: 20px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .status{
-
+  border-radius: 5px;
+  padding:5px;
+  font-size: 14px;
+  color:white;
 }
 
 .pending{
-
+  color: #f7cb7375;
 }
 
 .done{
-
+    color: #afd6ee75;
 }
 
 .canceled{
+    color: #f7737375;
+}
 
+.user{
+   display:flex;
+   gap:20px;
+   align-items:center; 
 }
