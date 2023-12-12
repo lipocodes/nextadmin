@@ -31,7 +31,7 @@ function addProductPage() {
         <textarea
           name="address"
           id="address"
-          rows="16"
+          rows="10"
           placeholder="Address"
         ></textarea>
         <button type="submit">Submit</button>

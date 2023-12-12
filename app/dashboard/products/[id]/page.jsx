@@ -9,29 +9,29 @@ function SingleProductPage() {
         <div className={styles.imgContainer}>
           <Image src='/noavatar.png' fill />    
         </div>
-        John Doe
+        Iphone
       </div>
       <div className={styles.formContainer}>
-        <label>Username</label>
-        <input type="text" name="username" placeholder='John Doe'></input>
-        <label>Email</label>
-        <input type="text" name="email" placeholder='John Doe@mail.com'></input>
-        <label>Password</label>
-        <input type="password" name="password" placeholder='John Doe'></input>
-        <label>Phone</label>
-        <input type="text" name="phone" placeholder='+1234567'></input>
-        <label>Address</label>
-        <textarea  name="address"  placeholder='New York'></textarea>
-        <label>Is Admin</label>
-        <select name="isAdmin" id="isAdmin">
-          <option value={true}>Yes</option>
-          <option value={false}>No</option>
-        </select>
-        <label>Is Active?</label>
-        <select name="isActive" id="isActive">
-          <option value={true}>Yes</option>
-          <option value={false}>No</option>
-        </select>
+        <form className={styles.form}>
+          <label>Title</label>
+          <input type="text" name="title" placeholder='Iphone'></input>
+          <label>Price</label>
+          <input type="number" name="price" placeholder='1000.00'></input>
+          <label>Stock</label>
+          <input type="number" name="stock" placeholder='100'></input>
+          <label>Color</label>
+          <input type="text" name="color" placeholder='Green'></input>
+          <label>Size</label>
+          <input type="number"  name="size"  placeholder='9'></input>
+          <label>Category</label>
+          <select name="cat" id="cat">
+            <option value="kitchen">Kitchen</option>
+            <option value="computers">Computers</option>
+          </select>
+          <label>Description</label>
+          <textarea  name="desc" id="desc" rows="10" placeholder='Description'></textarea>
+          <button>Update</button>
+        </form>
       </div>    
     </div>
   )
