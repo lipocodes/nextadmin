@@ -27,6 +27,7 @@ function UsersPage() {
           </tr>
         </thead>
         <tbody>
+
           <tr>
             <td>
               <div className={styles.user}>
@@ -47,6 +48,7 @@ function UsersPage() {
               </div>
             </td>
           </tr>
+          
         </tbody>
       </table>
       <Pagination/>
