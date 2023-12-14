@@ -1,13 +1,14 @@
-export const connectToDB = async() =>{
+import mongoose from "mongoose";
 
-   const connection = {}
+const connection = {};
 
-    try {
-        if(connection.isConnected) return;
-        //'dashboard' is the DB name
-        const db = await mongoose.connect(process.env.MONGO);
-        connection.isConnected = db.connection[0].readyState;
-      } catch (error) {
-        throw new Error(error);
-      }
-}
+export const connectToDB = async () => {
+  try {
+    if (connection.isConnected) return;
+    const db = await mongoose.connect('mongodb+srv://lipocodes:lipo12345@cluster0.o8rgq0k.mongodb.net/dashboard?retryWrites=true&w=majority');
+    connection.isConnected = db.connections[0].readyState;
+  } catch (error) {
+    console.log(error)
+    throw new Error(error);
+  }
+};
